@@ -1,0 +1,18 @@
+# Core
+Flask>=2.3,<3.0
+SQLAlchemy>=2.0,<3.0              # Core ORM engine (Flask-SQLAlchemy depends on this)
+
+# Extensions
+Flask-SQLAlchemy>=3.1,<4.0        # ORM support
+Flask-Migrate>=4.0,<5.0           # Database migrations
+Flask-Login>=0.6,<1.0             # User session management
+Flask-WTF>=1.1,<2.0               # Forms with CSRF protection
+Flask-Mail>=0.9,<1.0              # Sending emails
+Flask-Cors>=4.0,<5.0              # Cross-Origin Resource Sharing
+Flask-DotEnv>=0.1.2,<1.0          # Load .env automatically
+Flask-Bcrypt>=1.0,<2.0            # Password hashing
+Flask-JWT-Extended>=4.6,<5.0      # JWT-based authentication
+
+# Production
+gunicorn>=21.2,<22.0              # WSGI server
+python-dotenv>=1.0,<2.0           # Environment variable loader
