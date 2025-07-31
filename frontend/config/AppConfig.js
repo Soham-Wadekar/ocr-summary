@@ -1,5 +1,4 @@
-export const ApiURL =
-  "";
+export const ApiURL = "http://192.168.0.101:5000/api/";
 export const AppLogo =
   "https://aicares-s3.s3.eu-north-1.amazonaws.com/assets/app-logo.png";
 export const AppLogoDark =

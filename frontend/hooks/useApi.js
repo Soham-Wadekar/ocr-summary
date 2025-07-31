@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { AppDetails } from "../config/AppConfig";
+import { ApiURL } from "../config/AppConfig";
 
 const useApi = () => {
   const [error, setError] = useState(null);
@@ -7,7 +7,9 @@ const useApi = () => {
 
   const request = useCallback(
     async (endpoint, method = "GET", body = null, token = null) => {
-      const url = AppDetails.ApiURL + endpoint;
+      console.log(ApiURL)
+      const url = ApiURL + endpoint;
+      console.log(url)
       setError(null);
       setData(null);
 
