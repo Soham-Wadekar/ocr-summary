@@ -62,7 +62,6 @@ const SignUpPage = () => {
 
   // Submit Logic
   const handleSubmit = async () => {
-    console.log("button pressed")
     if (validateForm()) {
       try {
         const response = await request("signup", "POST", {
@@ -84,7 +83,6 @@ const SignUpPage = () => {
         setConfirmPassword("");
         setErrors({});
         navigation.navigate("loginPage");
-        console.log("Action done!")
       } catch (error) {
         Toast.show({
           type: "error",

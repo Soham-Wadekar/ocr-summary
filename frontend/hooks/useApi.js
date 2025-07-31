@@ -7,9 +7,7 @@ const useApi = () => {
 
   const request = useCallback(
     async (endpoint, method = "GET", body = null, token = null) => {
-      console.log(ApiURL)
       const url = ApiURL + endpoint;
-      console.log(url)
       setError(null);
       setData(null);
 
