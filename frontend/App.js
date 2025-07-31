@@ -24,11 +24,11 @@ const App = () => {
     <ThemeProvider>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-          {/* <Stack.Screen name="testScreen" component={TestScreen} /> */}
           <Stack.Screen name="loadingPage" component={LoadingPage} />
           <Stack.Screen name="landingPage" component={LandingPage} />
           <Stack.Screen name="signUpPage" component={SignUpPage} />
           <Stack.Screen name="loginPage" component={LoginPage} />
+          <Stack.Screen name="homePage" component={TestScreen} />
         </Stack.Navigator>
         <Toast config={ToastConfig} />
       </NavigationContainer>
