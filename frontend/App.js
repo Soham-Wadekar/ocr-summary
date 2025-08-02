@@ -14,6 +14,7 @@ import LoadingPage from "./screens/LoadingPage";
 import LandingPage from "./screens/LandingPage";
 import SignUpPage from "./screens/SignUpPage";
 import LoginPage from "./screens/LoginPage";
+import HomePage from "./screens/HomePage";
 
 import { ThemeProvider } from "./hooks/useTheme";
 
@@ -28,7 +29,7 @@ const App = () => {
           <Stack.Screen name="landingPage" component={LandingPage} />
           <Stack.Screen name="signUpPage" component={SignUpPage} />
           <Stack.Screen name="loginPage" component={LoginPage} />
-          <Stack.Screen name="homePage" component={TestScreen} />
+          <Stack.Screen name="homePage" component={HomePage} />
         </Stack.Navigator>
         <Toast config={ToastConfig} />
       </NavigationContainer>
