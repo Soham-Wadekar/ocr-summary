@@ -1,6 +1,9 @@
 """
 App initialization
 """
+# Python Imports
+import os
+
 
 # Flask Imports
 from flask import Flask
@@ -31,6 +34,9 @@ def create_app():
     from app.routes import routes
 
     app.register_blueprint(routes, url_prefix=Config.BASE_ROUTE)
+
+    # Ensure uploads folder exists
+    os.makedirs(app.config["UPLOADS_FOLDER"], exist_ok=True)
 
     with app.app_context():
         db.create_all()
